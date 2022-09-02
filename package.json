@@ -4,7 +4,7 @@
   "description": "Runs JavaScript at compile time",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd example && node --experimental-fetch build.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Commandtechno/esbuild-plugin-macros#readme",
   "devDependencies": {
+    "@types/node": "^18.7.14",
     "esbuild": "^0.15.6"
   },
   "dependencies": {
