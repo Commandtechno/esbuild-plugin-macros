@@ -1,4 +1,5 @@
-export default {
+/** @type {import('esbuild').Plugin} */
+module.exports = {
   name: "esbuild-plugin-macros",
   setup(build) {
     build.onLoad({ filter: /\.macro\.[^\.]+$/ }, async args => {
@@ -11,7 +12,7 @@ export default {
           outfile: "",
           format: "esm"
         })
-        .then(result => result.outputFiles[0].text);
+        .then(result => result.outputFiles[0]);
 
       const exports = await import("data:text/javascript;charset=utf-8;base64," + btoa(code));
       return { loader: "ts", contents: "export = " + serialize(exports) };

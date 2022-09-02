@@ -1,0 +1,35 @@
+{
+  "name": "esbuild-plugin-macros",
+  "version": "1.0.0",
+  "description": "Runs JavaScript at compile time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Commandtechno/esbuild-plugin-macros.git"
+  },
+  "keywords": [
+    "esbuild",
+    "plugin",
+    "macro",
+    "esbuild-plugin",
+    "esbuild-macro",
+    "esbuild-plugin-macro",
+    "esbuild-macros",
+    "esbuild-plugin-macros"
+  ],
+  "author": "Commandtechno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Commandtechno/esbuild-plugin-macros/issues"
+  },
+  "homepage": "https://github.com/Commandtechno/esbuild-plugin-macros#readme",
+  "devDependencies": {
+    "esbuild": "^0.15.6"
+  },
+  "dependencies": {
+    "serialize-javascript": "^6.0.0"
+  }
+}
